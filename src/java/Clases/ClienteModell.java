@@ -11,7 +11,7 @@ package Clases;
 public class ClienteModell {
     private String codigo;
     private String nombre;
-    private String apellidos;
+    private String apellido;
     private String direccion;
     private String correo;
     private int telefono;
@@ -32,12 +32,12 @@ public class ClienteModell {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getDireccion() {

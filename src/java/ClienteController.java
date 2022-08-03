@@ -40,7 +40,8 @@ public class ClienteController extends HttpServlet {
             ClienteModell.setNombre(request.getParameter("nombre"));
             ClienteModell.setApellido(request.getParameter("apliido"));
             ClienteModell.setDireccion(request.getParameter("direccion"));
-            
+            ClienteModell.setCorreo(request.getParameter("correo"));
+            ClienteModell.setTelefono(request.getParameter("telefono"));
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -53,6 +54,8 @@ public class ClienteController extends HttpServlet {
             out.println("<h3>" + ClienteModell.getNombre() + "</h3>");
             out.println("<h3>" + ClienteModell.getApellido()+ "</h3>");
             out.println("<h3>" + ClienteModell.getDireccion() + "</h3>");
+            out.println("<h3>" + ClienteModell.getCorreo() + "</h3>");
+            out.println("<h3>" + ClienteModell.getTelefono() + "</h3>");
             out.println("</body>");
             out.println("</html>");
         }

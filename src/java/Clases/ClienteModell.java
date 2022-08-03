@@ -14,7 +14,7 @@ public class ClienteModell {
     private String apellido;
     private String direccion;
     private String correo;
-    private int telefono;
+    private String telefono;
 
     public String getCodigo() {
         return codigo;
@@ -56,13 +56,15 @@ public class ClienteModell {
         this.correo = correo;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+   
     
     
     

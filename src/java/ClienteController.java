@@ -38,7 +38,7 @@ public class ClienteController extends HttpServlet {
            
             ClienteModell.setCodigo(request.getParameter("codigo"));
             ClienteModell.setNombre(request.getParameter("nombre"));
-            ClienteModell.setApellido(request.getParameter("apliido"));
+            ClienteModell.setApellido(request.getParameter("apellido"));
             ClienteModell.setDireccion(request.getParameter("direccion"));
             ClienteModell.setCorreo(request.getParameter("correo"));
             ClienteModell.setTelefono(request.getParameter("telefono"));
@@ -50,12 +50,12 @@ public class ClienteController extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<a href=\"index.html\" > Regresar a la pagina anterior </a>");
-            out.println("<h3>" + ClienteModell.getCodigo() + "</h3>");
-            out.println("<h3>" + ClienteModell.getNombre() + "</h3>");
-            out.println("<h3>" + ClienteModell.getApellido()+ "</h3>");
-            out.println("<h3>" + ClienteModell.getDireccion() + "</h3>");
-            out.println("<h3>" + ClienteModell.getCorreo() + "</h3>");
-            out.println("<h3>" + ClienteModell.getTelefono() + "</h3>");
+            out.println("<h3>" + "Codigo: "+ ClienteModell.getCodigo() + "</h3>");
+            out.println("<h3>" + "Nombre: "+ ClienteModell.getNombre() + "</h3>");
+            out.println("<h3>" + "Apellido: "+ ClienteModell.getApellido()+ "</h3>");
+            out.println("<h3>" + "Direccion: "+ ClienteModell.getDireccion() + "</h3>");
+            out.println("<h3>" + "Correo: "+ ClienteModell.getCorreo() + "</h3>");
+            out.println("<h3>" + "Telefono: "+ ClienteModell.getTelefono() + "</h3>");
             out.println("</body>");
             out.println("</html>");
         }

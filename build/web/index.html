@@ -18,7 +18,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
      
      <div class="container">
      <h1>Registro de Clientes</h1>
+     <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="ClienteController">Ver los Registros previos </a>
+</nav> 
         <form action="ClienteController">
+            
   <div class="form-group">
     <label for="formGroupExampleInput">Ingrese el codigo</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Codigo" name="codigo">
@@ -44,7 +48,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <label for="formGroupExampleInput6">Ingrese su numero de telefono</label>
     <input type="number" class="form-control" id="formGroupExampleInput6" placeholder="Numero de Telefono" name="telefono">
   </div>  
-    <button type="submit" class="btn btn-primary">Enviar</button> <br>       
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
+   <!--<button type="submit" class="btn btn-primary">Enviar</button> <br> -->      
 </form>
         </div>
         
